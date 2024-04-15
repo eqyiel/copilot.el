@@ -133,7 +133,7 @@ find indentation offset."
   :type 'directory
   :group 'copilot)
 
-(defconst copilot--server-executable
+(defcustom copilot--server-executable
   (if (eq system-type 'windows-nt)
       (f-join copilot-install-dir "node_modules" "copilot-node-server"
               "bin" "copilot-node-server")
